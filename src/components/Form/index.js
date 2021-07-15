@@ -5,7 +5,7 @@ import './Form.css';
 
 export default function Form({ handleSubmit, handleChange, novaTarefa }) {
   return (
-    <form onSubmit={{ handleSubmit }} action="#" className="form">
+    <form onSubmit={handleSubmit} action="#" className="form">
       <input type="text" onChange={handleChange} value={novaTarefa} />
       <button type="submit">
         <FaPlus />
